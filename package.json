@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This are some examples about how to use flex-box",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp start"
   },
   "author": "Kiga01",
   "license": "MIT",

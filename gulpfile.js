@@ -77,6 +77,7 @@ gulp.task('scssLint', function() {
 });
 
 gulp.task('watch', function() {
+    gulp.watch(sassWatch, ['scssLint']);
     gulp.watch(sassWatch, ['scss']);
     gulp.watch(jsSources, ['js']);
     gulp.watch(htmlIndex, ['htmlIndex']);

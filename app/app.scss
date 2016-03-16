@@ -2,4 +2,65 @@
 
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
-$font-family-p: 'Open Sans', sans-serif;
+$font-family: 'Open Sans', sans-serif;
+
+$base-font-size: 10px;
+$font-size-13px: 1.3rem;
+$font-size-15px: 1.5rem;
+$font-size-22px: 2.2rem;
+$font-size-30px: 3rem;
+$font-size-60px: 6rem;
+
+$color1: #f0f0e7;
+$color2: #f0e8bd;
+$color3: #f74f5b;
+$color4: #a12c41;
+$color5: #7a7268;
+$color6: #90b886;
+
+body {
+  background-color: $color1;
+  font-family: $font-family;
+  font-size: $base-font-size;
+}
+
+header {
+  background-color: $color3;
+  height: 100px;
+
+  .title {
+    //@extend .text-left;
+    bottom: 5px;
+    color: $color4;
+    font-size: $font-size-60px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-shadow: 1px 1px $color1;
+  }
+
+  .author {
+    //@extend .text-right;
+    bottom: 5px;
+    color: $color4;
+    font-size: $font-size-13px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-shadow: 1px 0 2px $color1;
+  }
+}
+
+.menu-list {
+  ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+}
