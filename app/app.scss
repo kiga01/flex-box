@@ -57,6 +57,10 @@ header {
     font-size: $font-size-15px;
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column; //column | row
+    justify-content: center; //flex-start | flex-end | center | space-between | space-around
+    align-items: center; //flex-start | flex-end | center | baseline | stretch 
 
     li {
       background-color: $color2;
