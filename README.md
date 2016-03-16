@@ -48,23 +48,48 @@ main directions, like rows horizontally or like columns vertically.
 flex-direction: row | row-reverse | column | column-reverse
 ```
 
-- row
+- row :
 This is the initial value. The flex container’s main axis has the same orientation as the current writing mode. The
 main-start is on the left in a left-to-right language, and the main-end is on the right. In a right-to-left language,
 the main-start is on the right and the main-end is on the left.
 
-- row-reverse
+- row-reverse :
 Same as row, except the main-start and main-end directions are swapped. The flex container’s main axis has the opposite
 orientation as the current writing mode.
 
-- column
+- column :
 The flex container’s main axis is rotated so that the main-start is at the top and the main-end is at the bottom.
 Basically, flex items are laid vertically from top to bottom in a horizontal language. If the language is vertical,
 then the column value will be horizontal with respect to the language.
 
-- column-reverse
+- column-reverse :
 Same as column, except that main-start and main-end directions are swapped.
 
+Note that the reverse values do not reverse box ordering; like writing-mode and direction, they only change the
+direction of flow. Painting order, speech order, and sequential navigation orders are not affected.
+
+* **flex-wrap**
+
+The flex-wrap property controls whether the flex container is single-line or multi-line, and the direction of the
+cross-axis, which determines the direction new lines are stacked in.
+
+```css
+flex-wrap: nowrap | wrap | wrap-reverse
+```
+
+- nowrap :
+This is the initial value. The flex container is single-line, and all items are laid out on that line, even if it means
+they might overflow the container. The direction of the flex line depends on the directionality of the text (see
+flex-direction above).
+
+- wrap:
+The flex items will wrap onto additional flex lines if there isn’t enough room for them on the first flex line.
+Additional flex lines are added in the direction of the cross axis, which is affected by the directionality of the text
+(see flex-direction above).
+
+- wrap-reverse :
+Same as wrap, except the cross-start and cross-end directions are swapped. This means that additional flex lines are
+added in the opposite direction of the cross axis.
 
 Sources:
 
