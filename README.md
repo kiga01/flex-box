@@ -38,7 +38,7 @@ A flex container is created by setting the display property of an element to eit
 }
 ```
 
-* **flex-direction**
+**flex-direction**
 
 The flex-direction property specifies how flex items are placed in the flex container, by setting the direction of the
 flex container’s main axis. This determines the direction that flex items are laid out in. They can be laid out in two
@@ -68,7 +68,7 @@ Same as column, except that main-start and main-end directions are swapped.
 Note that the reverse values do not reverse box ordering; like writing-mode and direction, they only change the
 direction of flow. Painting order, speech order, and sequential navigation orders are not affected.
 
-* **flex-wrap**
+**flex-wrap**
 
 The flex-wrap property controls whether the flex container is single-line or multi-line, and the direction of the
 cross-axis, which determines the direction new lines are stacked in.
