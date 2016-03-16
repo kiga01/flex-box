@@ -2,5 +2,6 @@
 .sass-cache
 node_modules
 dist
+css/app.css
 npm-debug.log
 scssReport.json
