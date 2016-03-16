@@ -1,4 +1,4 @@
-# flex-box
+# Flex-box:
 
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the
 items align, directions and order in the container even when they are with dynamic or even unknown size. The prime
@@ -20,9 +20,28 @@ Using flexbox, you can also lay elements out inside a container in either direct
 flex directions; you’re not bound to just one direction as in other layout modes. This allows for the creation of more
 adaptive and responsive layouts that adapt to the layout changes on different screen sizes and orientations.
 
+##Create Flexible layout (Container and items)
+
+The first step to start using Flexbox is to create a flex container. Children of a flex container are called the flex
+items, and are laid out inside the flex container using the Flexbox properties. Some of the Flexbox properties apply to
+the container, others are applied to the flex items.
+
+A flex container is created by setting the display property of an element to either flex or inline-flex.
+
+```css
+.flex-container {
+    display: flex;
+}
+/* or */
+.flex-container {
+    display: inline-flex;
+}
+```
+
+* **flex-direction**
 
 
-* **Sources:**
+Sources:
 
 - http://tympanus.net/codrops/css_reference/flexbox/
 - https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Usando_las_cajas_flexibles_CSS
