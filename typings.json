@@ -1,5 +1,9 @@
 {
   "ambientDependencies": {
+    "gulp-concat": "registry:dt/gulp-concat#0.0.0+20150903224406",
     "node": "registry:dt/node#4.0.0+20160316042000"
+  },
+  "dependencies": {
+    "gulp": "registry:npm/gulp#3.8.0+20160211003958"
   }
 }
