@@ -22,7 +22,8 @@ adaptive and responsive layouts that adapt to the layout changes on different sc
 
 
 
-Sources:
-http://tympanus.net/codrops/css_reference/flexbox/
-https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Usando_las_cajas_flexibles_CSS
-https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+* **Sources:**
+
+- http://tympanus.net/codrops/css_reference/flexbox/
+- https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Usando_las_cajas_flexibles_CSS
+- https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
