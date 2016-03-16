@@ -1,0 +1,20 @@
+{
+  "name": "flex-box",
+  "version": "1.0.0",
+  "description": "This are some examples about how to use flex-box",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kiga01",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-scss-lint": "^0.3.9",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.1"
+  }
+}
