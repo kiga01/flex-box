@@ -82,7 +82,7 @@ This is the initial value. The flex container is single-line, and all items are 
 they might overflow the container. The direction of the flex line depends on the directionality of the text (see
 flex-direction above).
 
-- wrap:
+- wrap :
 The flex items will wrap onto additional flex lines if there isn’t enough room for them on the first flex line.
 Additional flex lines are added in the direction of the cross axis, which is affected by the directionality of the text
 (see flex-direction above).
@@ -90,6 +90,204 @@ Additional flex lines are added in the direction of the cross axis, which is aff
 - wrap-reverse :
 Same as wrap, except the cross-start and cross-end directions are swapped. This means that additional flex lines are
 added in the opposite direction of the cross axis.
+
+**flex-flow**
+
+The flex-flow property is a shorthand for setting the flex-direction and flex-wrap properties, which together define
+the flex container’s main and cross axes.
+
+```css
+flex-flow: <'flex-direction'> <'flex-wrap'>
+```
+
+**justify-content**
+
+The justify-content property aligns flex items along the main axis of the current line of the flex container. This is
+done after any flexible lengths and any auto margins have been resolved. Typically it helps distribute extra free space
+leftover when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.
+It also exerts some control over the alignment of items when they overflow the line.
+
+```css
+justify-content: flex-start | flex-end | center | space-between | space-around
+```
+
+- flex-start :
+This is the initial value. Flex items are packed toward the start of the line.
+
+- flex-end :
+Flex items are packed toward the end of the line.
+
+- center :
+Flex items are packed toward the center of the line, with equal amounts of empty space between the main-start edge of
+the line and the first item on the line and between the main-end edge of the line and the last item on the line. (If
+the leftover free-space is negative, the flex items will overflow equally in both directions.)
+
+- space-between :
+Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex
+item on the line, this value is identical to flex-start. Otherwise, the first flex item on the line is placed on the
+main-start edge of the line, the last flex item on the line is on the main-end edge of the line, and the remaining flex
+items on the line are distributed so that the spacing between any two adjacent items is the same.
+
+- space-around :
+Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is
+negative or there is only a single flex item on the line, this value is identical to center. Otherwise, the flex items
+on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the
+spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex
+items.
+
+**align-items**
+
+The align-items property is similar to the justify-content property, but instead of aligning flex items in the main
+axis, align-items is used to align flex items in the cross-axis (perpendicular to the main axis).
+
+```css
+align-items: flex-start | flex-end | center | baseline | stretch
+```
+
+- flex-start :
+Flex items are packed toward the cross-start of the line.
+
+- flex-end :
+Flex items are packed toward the cross-end of the line.
+
+- center :
+Flex items are packed toward the center of the line, with equal amounts of empty space between the cross-start edge of
+the line and the first item on the line and between the cross-end edge of the line and the last item on the line.
+(If the leftover free-space is negative, the flex items will overflow equally in both directions.)
+
+- baseline :
+Flex items are aligned such that their baselines align. The item with the largest distance between its cross-start
+margin edge and its baseline is flushed with the cross-start edge of the line.
+
+- stretch :
+This is the initial value. The flex items are stretched out from the cross-start to the cross-end, while still
+respecting the constraints imposed by min-height/min-width/max-height/max-width. Note that if the flex container’s
+height is constrained this value may cause the contents of the flex items to overflow the items.
+
+**align-content**
+
+The align-content property aligns a flex container’s lines within the flex container when there is extra space in the
+cross-axis, similar to how justify-content aligns individual items within the main-axis. This property has no effect
+when the flex container has only a single line.
+
+```css
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+```
+
+- flex-start :
+Lines are packed toward the cross-start of the flex container.
+
+- flex-end :
+Lines are packed toward the cross-end of the flex container.
+
+- center :
+Lines are packed toward the center of the flex container, with equal amounts of empty space between the cross-start edge
+of the container and the first line in the container and between the cross-end edge of the container and the last line
+in the container. (If the leftover free-space is negative, the lines will overflow equally in both directions.)
+
+- space-between :
+Lines are evenly distributed in the flex container. If the leftover free-space is negative this value is identical to
+flex-start. Otherwise, the cross-start edge of the first line in the flex container is placed on the cross-start content
+edge of the flex container, the cross-end edge of the last line in the flex container is placed on the cross-end content
+edge of the flex container, and the remaining lines in the flex container are distributed so that the spacing between
+any two adjacent lines is the same.
+
+- space-around :
+Lines are evenly distributed in the flex container, with half-size spaces on either end. If the leftover free-space is
+negative this value is identical to center. Otherwise, the lines in the flex container are distributed such that the
+spacing between any two adjacent lines is the same, and the spacing between the first/last lines and the flex container
+edges is half the size of the spacing between flex lines.
+
+- stretch :
+This is the initial value. Lines stretch to take up the remaining space. If the leftover free-space is negative, this
+value is identical to flex-start. Otherwise, the free-space is split equally between all of the lines, increasing their
+cross size.
+
+**order**
+
+Flex items are, by default, displayed and laid out in the same order as they appear in the source document. The order
+property can be used to change this ordering.
+
+The order property controls the order in which flex items appear within their flex container, by assigning them to
+ordinal groups. It takes a single <integer> value, which specifies which ordinal group the flex item belongs to.
+
+Then, a flex container lays out its content in order-modified document order, starting from the lowest numbered ordinal
+group and going up. Items with the same ordinal group are laid out in the order they appear in the source document.
+
+The initial order of all flex items is zero (0) and the flex items are rendered in the order they appear in the source
+code. The order property can also take negative values.
+
+Note that the order in which the flex item appears inside its container changes only on screen, not in the source
+document. This means that screen readers will read the flex items in the order they appear in the document source,
+not the order specified using the order property. The default traversal order of sequential navigation modes (such as
+cycling through links, for example using nav-index or tabindex) is also not affected (except in Firefox, which changes
+the order of traversal of links based on the visual order). Hence, you should use the order property only for visual,
+not logical, reordering of content.
+
+This property could be useful for reordering blog posts, for example, where you may want to feature a blog post at the
+beginning of the page, even if that article is no longer the latest. The logical order that is accessible for screen
+readers will be maintained, and the article can be visually replaced without affecting the accessibility.
+
+```css
+order: <integer>
+```
+
+**align-self**
+
+Flex items can be aligned in the cross axis of the current line of the flex container, similar to justify-content but
+in the perpendicular direction. align-items sets the default alignment for all of the flex container’s items. The
+align-self property allows this default alignment to be overridden for individual flex items. In order to fully
+understand the values and concepts behind this property, please see the align-items property description.
+
+```css
+align-self: auto | flex-start | flex-end | center | baseline | stretch
+```
+
+- auto :
+This is the initial value. A value of auto computes to the value of align-items on the element’s container, or stretch
+if the element has no parent. In other words, the item will be aligned based on the default value or the value specified
+for the align-items property.
+
+- flex-start :
+The flex item is packed toward the cross-start of the line.
+
+- flex-end :
+The flex item is packed toward the cross-end of the line.
+
+- center :
+The flex item’s margin box is centered in the cross axis within the line. (If the cross size of the flex line is less
+than that of the flex item, it will overflow equally in both directions.)
+
+- baseline :
+If the flex item’s inline axis is the same as the cross axis, this value is identical to flex-start. Otherwise, it
+participates in baseline alignment: all participating flex items on the line are aligned such that their baselines
+align, and the item with the largest distance between its baseline and its cross-start margin edge is placed flush
+against the cross-start edge of the line.
+
+- stretch :
+The flex item is stretched out from the cross-start to the cross-end, while still respecting the constraints imposed by
+min-height/min-width/max-height/max-width. Note that if the flex container’s height is constrained this value may cause
+the contents of the flex item to overflow the item.
+
+**flex-grow**
+
+The flex-grow property sets the flex grow factor of a flex item. A flex grow factor is a <number> which determines how
+much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is
+distributed. The initial value is zero (0), and negative numbers are invalid.
+
+If the flex items are laid out on the flex line such that they don’t take up the entire space on that line, you can
+“expand” the flex items so that they fill up the entire line. The amount of available space on the line can be
+distributed among the flex items following a specific proportion that you can specify using the flex-grow property.
+The higher the flex-grow value, the more the item will be allowed to grow relative to the other items.
+
+For example, you can distribute the space among the flex items such that one of these items always gets twice as much
+space as the others. You can do that by setting the flex-grow property value to 2 (two). An item with flex-grow: 2 will
+grow twice as much as an item with flex-grow: 1—it gets twice as much space as the latter. So, for every one pixel that
+the second item gets, the first item grows by two pixels.
+
+```css
+flex-grow: <number>
+```
 
 Sources:
 
