@@ -289,6 +289,87 @@ the second item gets, the first item grows by two pixels.
 flex-grow: <number>
 ```
 
+**flex-shrink**
+
+The flex-shrink property sets the flex shrink factor of a flex item. A flex shrink factor is a <number> which determines
+how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space
+is distributed. The flex shrink factor is multiplied by the flex basis (see flex-basis) when distributing negative
+space. The initial value is zero (1), meaning that the items don’t shrink by default, and negative numbers are invalid.
+
+If the sum of the main sizes (see concepts and terminology) of all flex items is greater than the main size of the flex
+container, you can specify just by how much you want to “shrink” the flex items. The amount by which the flex items’ main
+sizes exceed the container’s main size is the negative space. Using the flex-shrink property, you can distribute this
+negative space over the flex items. The negative space is distributed in proportion to flex-basis multiplied by the
+flex-shrink ratio, where the flex basis is the initial main size of the flex item, before free space is distributed
+according to the flex factors.
+
+For example, you can distribute the space among the flex items such that one of these items always gets twice as much
+negative space as the others. You can do that by setting the flex-shrink property value to 2 (two). An item with
+flex-shrink: 2 will shrink twice as much as an item with flex-shrink: 1—it gets twice as much negative space as the
+latter. So, for every one pixel that the second item shrinks, the first item shrinks by two pixels. The higher the
+flex-shrink value, the more the item will shrink relative to the other items.
+
+The items in the following demo are laid inside a container that has a main size of 500px. Each of the four items has a
+main size basis (or a flex basis) of 200px. The items (combined) obviously have a larger main size than the container’s.
+Because this is a Flexbox layout, the items will automatically shrink to fit inside their container. However, using the
+flex-shrink property, you can control the ratio by which the items are to be shrunk. Try entering different values for
+the flex-shrink property in the following demo to see how the elements shrink.
+
+```css
+flex-shrink: <number>
+```
+
+**flex-basis**
+
+The flex-basis property takes the same values as the width property, and sets the flex basis: the initial main size
+(see concepts and terminology) of the flex item, before free space is distributed according to the flex factors
+(see flex-shrink and flex-grow).
+
+Except for auto, flex-basis is resolved the same way as width in horizontal writing modes: percentage values for the
+flex-basis property are set relative to the flex container’s inner main size. Also, flex-basis determines the size of
+the element’s content box, unless otherwise specified using the box-sizing property.
+
+If the specified flex-basis is auto, the used flex basis is the value of the flex item’s main size property. (This can
+itself be the keyword auto, which sizes the flex item based on its contents.)
+
+The flex-basis property is usually used in conjunction with the flex-shrink and flex-grow properties, in the shorthand
+flex property.
+
+In the following demo, the flex-basis is used in the flex shorthand. The flex-shrink and flex-grow properties are set
+so that the items neither grow nor shrink. The value specified using flex-basis defines the main size of each item. Try
+changing the values of all three properties in the flex shorthand to see how the width of the items responds. For
+example, try using a different flex-grow value to see how the size of an item changes after positive space is
+distributed.
+
+```css
+flex-basis: auto | <'width'>
+```
+
+**flex**
+
+The flex property is a shorthand property for setting the flex-grow, flex-shrink, and flex-basis properties.
+
+When an element is a flex item, flex is used instead of the main size property (width or height properties, see concepts
+and terminology) to determine the main size of the element. If an element is not a flex item, flex has no effect.
+
+The initial value is 0 1 auto. The flex-grow and flex-shrink properties are optional and can be omitted from the flex
+declaration.
+
+When the flex-grow value is omitted, it is set to 1. Note that 1 is not the initial value of the flex-grow property! It
+is only the value used when flex-grow is omitted from the shorthand declaration.
+
+When the flex-shrink property is omitted, it is set to 1. Note that the flex shrink factor is multiplied by the flex
+basis when distributing negative space. (See flex-shrink)
+
+When the flex-basis value is omitted, it is set to 0%.
+
+The initial values of flex-grow and flex-shrink properties are different from their defaults when omitted in the flex
+shorthand. This so that the flex shorthand can better accommodate the most common cases.
+
+```css
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+```
+
 Sources:
 
 - http://tympanus.net/codrops/css_reference/flexbox/
