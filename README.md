@@ -40,6 +40,31 @@ A flex container is created by setting the display property of an element to eit
 
 * **flex-direction**
 
+The flex-direction property specifies how flex items are placed in the flex container, by setting the direction of the
+flex container’s main axis. This determines the direction that flex items are laid out in. They can be laid out in two
+main directions, like rows horizontally or like columns vertically.
+
+```css
+flex-direction: row | row-reverse | column | column-reverse
+```
+
+- row
+This is the initial value. The flex container’s main axis has the same orientation as the current writing mode. The
+main-start is on the left in a left-to-right language, and the main-end is on the right. In a right-to-left language,
+the main-start is on the right and the main-end is on the left.
+
+- row-reverse
+Same as row, except the main-start and main-end directions are swapped. The flex container’s main axis has the opposite
+orientation as the current writing mode.
+
+- column
+The flex container’s main axis is rotated so that the main-start is at the top and the main-end is at the bottom.
+Basically, flex items are laid vertically from top to bottom in a horizontal language. If the language is vertical,
+then the column value will be horizontal with respect to the language.
+
+- column-reverse
+Same as column, except that main-start and main-end directions are swapped.
+
 
 Sources:
 
