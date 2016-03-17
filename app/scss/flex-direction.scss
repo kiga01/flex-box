@@ -1,0 +1,23 @@
+.container2 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container3 {
+  @extend .box;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.container4 {
+  @extend .box;
+  display: flex;
+  flex-direction: column;
+}
+
+.container5 {
+  @extend .box;
+  display: flex;
+  flex-direction: column-reverse;
+}
