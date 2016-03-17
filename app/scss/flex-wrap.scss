@@ -1,0 +1,17 @@
+.container6 {
+  @extend .box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container7 {
+  @extend .box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container8 {
+  @extend .box;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
