@@ -54,13 +54,13 @@ header {
   padding: 10px;
 
   ul {
-    font-size: $font-size-15px;
-    list-style: none;
-    padding: 0;
+    align-items: center; //flex-start | flex-end | center | baseline | stretch
     display: flex;
     flex-direction: column; //column | row
+    font-size: $font-size-15px;
     justify-content: center; //flex-start | flex-end | center | space-between | space-around
-    align-items: center; //flex-start | flex-end | center | baseline | stretch 
+    list-style: none;
+    padding: 0;
 
     li {
       background-color: $color2;
