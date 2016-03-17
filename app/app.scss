@@ -113,7 +113,7 @@ li {
 .container-box {
   background-color: $color2;
   border: 1px solid $color5;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 
   .container-text {
     @extend .text-center;
@@ -124,7 +124,6 @@ li {
     font-size: $font-size-22px;
     text-transform: capitalize;
   }
-
 }
 
 @import 'scss/basic';

@@ -7,7 +7,9 @@ npm install
 add first time gulp dependencies to typings
 
 typings i --save <gulp library name>
+
 typings i --save --ambient <gulp library name>
+
 create the typing inside tools folder
 
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the
