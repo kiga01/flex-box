@@ -1,5 +1,15 @@
 # Flex-box:
 
+##config
+
+npm install
+
+add first time gulp dependencies to typings
+
+typings i --save <gulp library name>
+typings i --save --ambient <gulp library name>
+create the typing inside tools folder
+
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the
 items align, directions and order in the container even when they are with dynamic or even unknown size. The prime
 characteristic of the flex container is the ability to modify the width or height of its children to fill the available
