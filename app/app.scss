@@ -51,8 +51,6 @@ header {
 }
 
 .menu-list {
-  padding: 10px;
-
   ul {
     align-items: center; //flex-start | flex-end | center | baseline | stretch
     display: flex;
@@ -80,7 +78,10 @@ header {
 li {
   a {
     color: $color5;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
+    width: 100%;
 
     &:hover {
       text-decoration: none;
@@ -88,3 +89,42 @@ li {
   }
 }
 
+.box {
+  height: 260px;
+  width: 100%;
+}
+
+.element {
+  background-color: $color6;
+  border: 1px solid $color1;
+  height: 60px;
+  margin: 5px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-22px;
+    left: 38%;
+    position: relative;
+    top: 28%;
+  }
+}
+
+.container-box {
+  background-color: $color2;
+  border: 1px solid $color5;
+  margin: 10px;
+
+  .container-text {
+    @extend .text-center;
+  }
+
+  .container-title {
+    color: $color5;
+    font-size: $font-size-22px;
+    text-transform: capitalize;
+  }
+
+}
+
+@import 'scss/basic';
