@@ -1,6 +1,3 @@
-'use strict';
-
-//Remember typings install
 import * as gulp from 'gulp';
 import * as concat from 'gulp-concat';
 import * as compass from 'gulp-compass';
@@ -37,24 +34,24 @@ gulp.task('scss', () => gulp.src(sassSources)
         style: sassStyle
     }))
     .pipe(gulp.dest(outputDir + 'css'))
-    .pipe(connect.reload())
+    .pipe(<any> connect.reload())
 );
 
 gulp.task('js', () => gulp.src(jsSources)
     .pipe(concat('script.js'))
     //.pipe(uglify())
     .pipe(gulp.dest(outputDir + 'js'))
-    .pipe(connect.reload())
+    .pipe(<any> connect.reload())
 );
 
 gulp.task('htmlIndex', () => gulp.src(htmlIndex)
     .pipe(gulp.dest(outputDir))
-    .pipe(connect.reload())
+    .pipe(<any> connect.reload())
 );
 
 gulp.task('html', () => gulp.src(htmlSources)
     .pipe(gulp.dest(outputDir + 'html'))
-    .pipe(connect.reload())
+    .pipe(<any> connect.reload())
 );
 
 gulp.task('scssLint', () => gulp.src(sassWatch)
