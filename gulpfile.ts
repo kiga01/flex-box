@@ -70,4 +70,5 @@ gulp.task('js.w', () => gulp.watch(jsSources, ['js']));
 gulp.task('htmlIndex.w', () => gulp.watch(htmlIndex, ['htmlIndex']));
 gulp.task('html.w', () => gulp.watch(htmlSources, ['html']));
 
-gulp.task('start', ['scssLint', 'scssLint.w', 'scss', 'scss.w', 'js', 'js.w', 'fonts', 'html', 'html.w', 'htmlIndex', 'htmlIndex.w']);
+gulp.task('start', ['scssLint', 'scssLint.w', 'scss', 'scss.w', 'js', 'js.w', 'fonts', 'html', 'html.w', 'htmlIndex',
+    'htmlIndex.w']);
