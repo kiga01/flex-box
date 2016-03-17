@@ -1,0 +1,23 @@
+.container9 {
+  @extend .box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container10 {
+  @extend .box;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+
+.container11 {
+  @extend .box;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.container12 {
+  @extend .box;
+  display: flex;
+  flex-flow: column wrap-reverse;
+}
