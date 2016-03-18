@@ -7,6 +7,7 @@ $font-family: 'Open Sans', sans-serif;
 $base-font-size: 10px;
 $font-size-13px: 1.3rem;
 $font-size-15px: 1.5rem;
+$font-size-18px: 1.8rem;
 $font-size-22px: 2.2rem;
 $font-size-30px: 3rem;
 $font-size-60px: 6rem;
@@ -130,3 +131,5 @@ li {
 @import 'scss/flex-direction';
 @import 'scss/flex-flow';
 @import 'scss/flex-wrap';
+@import 'scss/justify-content';
+@import 'scss/align-items';
