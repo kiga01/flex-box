@@ -1,0 +1,32 @@
+.container29 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container30 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container31 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.inside6 {
+  background-color: $color3;
+  order: -3;
+}
+
+.inside7 {
+  background-color: $color4;
+  order: -1;
+}
+
+.inside8 {
+  background-color: $color5;
+  order: -2;
+}

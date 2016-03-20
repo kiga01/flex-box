@@ -12,7 +12,7 @@ typings i --save --ambient <gulp library name>
 
 create the typing inside tools folder
 
-** How to run the app **
+##How to run the app
 
 open any console and go to the folder where is located the project
 

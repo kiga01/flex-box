@@ -42,40 +42,26 @@
 }
 
 .inside2 {
-  background-color: $color6;
-  border: 1px solid $color1;
-  margin: 5px;
-  min-height: 70px;
-  width: 60px;
+  @extend .inside1;
 
   span {
-    color: $color1;
     font-size: $font-size-18px;
   }
 }
 
 .inside3 {
-  background-color: $color6;
-  border: 1px solid $color1;
-  margin: 5px;
-  min-height: 70px;
-  width: 60px;
+  @extend .inside1;
 
   span {
-    color: $color1;
     font-size: $font-size-15px;
   }
 }
 
 .inside4 {
+  @extend .inside1;
   background-color: $color6;
-  border: 1px solid $color1;
-  margin: 5px;
-  min-height: 70px;
-  width: 60px;
 
   span {
-    color: $color1;
     font-size: $font-size-22px;
   }
 }
