@@ -1,54 +1,81 @@
 .container18 {
   @extend .box;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
+  display: flex;
 }
 
 .container19 {
   @extend .box;
-  display: flex;
-  flex-direction: row;
   align-items: flex-end;
+  display: flex;
 }
 
 .container20 {
   @extend .box;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  display: flex;
 }
 
 .container21 {
   @extend .box;
-  display: flex;
-  flex-direction: row;
   align-items: baseline;
-
-  .inside1 {
-    font-size: $font-size-13px;
-
-    span {
-      top: 20%;
-    }
-  }
-
-  .inside2 {
-    font-size: $font-size-18px;
-
-    span {
-      top: 45%;
-    }
-  }
-
-  .inside3 {
-    font-size: $font-size-15px;
-  }
+  display: flex;
 }
 
 .container22 {
   @extend .box;
-  display: flex;
-  flex-direction: row;
   align-items: stretch;
+  display: flex;
+}
+
+.inside1 {
+  background-color: $color6;
+  border: 1px solid $color1;
+  margin: 5px;
+  min-height: 70px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-13px;
+  }
+}
+
+.inside2 {
+  background-color: $color6;
+  border: 1px solid $color1;
+  margin: 5px;
+  min-height: 70px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-18px;
+  }
+}
+
+.inside3 {
+  background-color: $color6;
+  border: 1px solid $color1;
+  margin: 5px;
+  min-height: 70px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-15px;
+  }
+}
+
+.inside4 {
+  background-color: $color6;
+  border: 1px solid $color1;
+  margin: 5px;
+  min-height: 70px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-22px;
+  }
 }

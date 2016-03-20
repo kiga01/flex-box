@@ -19,7 +19,8 @@ const jsSources = [
     'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
 ];
 const fontSources = [
-    'node_modules/bootstrap-sass/assets/fonts/'
+    'node_modules/bootstrap-sass/assets/fonts/',
+    'node_modules/font-awesome/fonts/'
 ];
 const htmlIndex = [
     'app/index.html'

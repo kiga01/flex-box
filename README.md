@@ -12,6 +12,18 @@ typings i --save --ambient <gulp library name>
 
 create the typing inside tools folder
 
+** How to run the app **
+
+open any console and go to the folder where is located the project
+
+type "npm install" in mac you should use "sudo npm install"
+
+type "typings install" in mac you should use "sudo typings install"
+
+type "npm start" for starting the server
+
+when the server is loaded go to any browser and type "http://localhost:8080/index.html"
+
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the
 items align, directions and order in the container even when they are with dynamic or even unknown size. The prime
 characteristic of the flex container is the ability to modify the width or height of its children to fill the available

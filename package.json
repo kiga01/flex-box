@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",

@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+@import '../node_modules/font-awesome/scss/font-awesome.scss';
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';
 
 $font-family: 'Open Sans', sans-serif;
@@ -52,6 +53,11 @@ header {
 }
 
 .menu-list {
+
+  .back-button {
+    padding: 5px 0 0 0;
+  }
+
   ul {
     align-items: center; //flex-start | flex-end | center | baseline | stretch
     display: flex;
@@ -65,7 +71,7 @@ header {
       background-color: $color2;
       height: 40px;
       margin-top: 10px;
-      padding-top: 8px;
+      padding: 0;
       width: 80%;
 
       &:hover {
@@ -79,8 +85,10 @@ header {
 li {
   a {
     color: $color5;
+    height: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 8px;
     text-decoration: none;
     width: 100%;
 
@@ -125,6 +133,10 @@ li {
     font-size: $font-size-22px;
     text-transform: capitalize;
   }
+}
+
+.btn-back {
+  @extend .btn-default;
 }
 
 @import 'scss/basic';
