@@ -1,0 +1,36 @@
+.container40 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container41 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container42 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.inside13 {
+  background-color: $color3;
+  flex-shrink: 1;
+}
+
+.inside14 {
+  background-color: $color4;
+  flex-shrink: 4;
+}
+
+.inside15 {
+  background-color: $color5;
+  flex-shrink: 2;
+}
+
+.inside16 {
+  width: 150px;
+}

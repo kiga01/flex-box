@@ -1,0 +1,67 @@
+.container32 {
+  @extend .box;
+  align-items: center;
+  display: flex;
+}
+
+.container33 {
+  @extend .box;
+  align-items: center;
+  display: flex;
+}
+
+.container34 {
+  @extend .box;
+  align-items: center;
+  display: flex;
+}
+
+.container35 {
+  @extend .box;
+  align-items: center;
+  display: flex;
+}
+
+.container36 {
+  @extend .box;
+  align-items: center;
+  display: flex;
+}
+
+.inside9 {
+  background-color: $color6;
+  border: 1px solid $color1;
+  margin: 5px;
+  min-height: 70px;
+  width: 60px;
+
+  span {
+    color: $color1;
+    font-size: $font-size-22px;
+  }
+}
+
+.self-start {
+  align-self: flex-start;
+  background-color: $color3;
+}
+
+.self-end {
+  align-self: flex-end;
+  background-color: $color3;
+}
+
+.self-center {
+  align-self: center;
+  background-color: $color3;
+}
+
+.self-base {
+  align-self: baseline;
+  background-color: $color3;
+}
+
+.self-strech {
+  align-self: stretch;
+  background-color: $color3;
+}

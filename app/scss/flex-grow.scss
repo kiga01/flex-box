@@ -1,0 +1,32 @@
+.container37 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container38 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.container39 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.inside10 {
+  background-color: $color3;
+  flex-grow: 1;
+}
+
+.inside11 {
+  background-color: $color4;
+  flex-grow: 4;
+}
+
+.inside12 {
+  background-color: $color5;
+  flex-grow: 2;
+}
