@@ -147,6 +147,7 @@ header {
   }
 
   &:hover,
+  &:focus,
   &:active {
     background-color: darken($color4, 10%);
     color: $color1;
