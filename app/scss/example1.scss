@@ -1,0 +1,50 @@
+.example-menu {
+  padding: 0;
+}
+
+.example-navigation {
+  background: $color3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  margin-top: 5px;
+
+  a {
+    color: $color1;
+    display: block;
+    font-size: $font-size-15px;
+    padding: 1em;
+    text-decoration: none;
+
+    &:hover {
+      background: darken($color3, 3%);
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .example-navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .example-navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .example-navigation a {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .example-navigation li:last-of-type a {
+    border-bottom: 0;
+  }
+}

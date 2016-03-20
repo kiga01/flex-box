@@ -58,7 +58,7 @@ header {
     padding: 5px 0 0 0;
   }
 
-  ul {
+  .menu-items {
     align-items: center; //flex-start | flex-end | center | baseline | stretch
     display: flex;
     flex-direction: column; //column | row
@@ -67,7 +67,7 @@ header {
     list-style: none;
     padding: 0;
 
-    li {
+    .item-list {
       background-color: $color2;
       height: 40px;
       margin-top: 10px;
@@ -82,7 +82,7 @@ header {
   }
 }
 
-li {
+.item-list {
   a {
     color: $color5;
     height: 100%;
@@ -152,3 +152,4 @@ li {
 @import 'scss/flex-shrink';
 @import 'scss/flex-basis';
 @import 'scss/flex';
+@import 'scss/example1';
