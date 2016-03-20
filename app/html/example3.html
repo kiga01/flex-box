@@ -2,28 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Example Flex-box 3</title>
-    <link href="../css/example3.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/app.css"/>
+    <title>Layout Example</title>
+    <link rel="stylesheet" href="../css/app.css"/>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">Header</header>
-        <article class="main">
-            <p>
-                Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.
-                Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu,
-                legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit
-                cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris
-                intellegam, ut fugit veritus placerat per.
-            </p>
-        </article>
-        <aside class="aside aside-1">Aside 1</aside>
-        <aside class="aside aside-2">Aside 2</aside>
-        <footer class="footer">Footer</footer>
+
+<div class="container-fluid">
+    <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="title col-xs-9 col-sm-9 col-md-8 col-lg-8">CSS Flex-box</div>
+        <div class="author col-xs-3 col-sm-3 col-md-4 col-lg-4">By: Kiga01</div>
+    </header>
+    <div class="menu-list">
+        <div class="back-button col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+            <button class="btn btn-back" onclick="window.location='../index.html'">
+                <span class="fa fa-arrow-circle-left"></span>Home
+            </button>
+        </div>
+
+        <div class="example-layout2 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <header>header</header>
+            <div class='main'>
+                <article>article</article>
+                <nav>nav</nav>
+                <aside>aside</aside>
+            </div>
+            <footer>footer</footer>
+
+        </div>
+
+
     </div>
+</div>
 
-    <script type="text/javascript" src="js/script.js"></script>
-
+<script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

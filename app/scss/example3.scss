@@ -1,0 +1,79 @@
+.example-layout2 {
+  background-color: $color1;
+  color: $color1;
+  font-size: $font-size-15px;
+  margin-top: 5px;
+  padding: 0;
+
+  .main {
+    background-color: $color1;
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    min-height: 800px;
+    padding: 0;
+
+    > article {
+      background-color: $color6;
+      border: 1px solid $color2;
+      border-radius: 7pt;
+      flex: 3 1 60%;
+      margin: 4px;
+      order: 2;
+      padding: 5px;
+    }
+
+    > nav {
+      background-color: darken($color6, 20%);
+      border: 1px solid $color2;
+      border-radius: 7pt;
+      flex: 1 6 20%;
+      margin: 4px;
+      order: 1;
+      padding: 5px;
+    }
+
+    > aside {
+      background-color: darken($color6, 40%);
+      border: 1px solid $color2;
+      border-radius: 7pt;
+      flex: 1 6 20%;
+      margin: 4px;
+      order: 3;
+      padding: 5px;
+    }
+  }
+
+  header,
+  footer {
+    background-color: $color3;
+    border: 1px solid $color2;
+    border-radius: 7pt;
+    display: block;
+    margin: 4px;
+    min-height: 100px;
+    padding: 5px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .example-layout2 {
+    .main {
+      flex-flow: column;
+    }
+
+    .main > article,
+    .main > nav,
+    .main > aside {
+      order: 0;
+    }
+
+    .main > nav,
+    .main > aside,
+    header,
+    footer {
+      max-height: 50px;
+      min-height: 50px;
+    }
+  }
+}
