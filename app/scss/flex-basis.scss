@@ -1,0 +1,15 @@
+.container43 {
+  @extend .box;
+  display: flex;
+  flex-direction: row;
+}
+
+.inside17 {
+  background-color: $color3;
+  flex-basis: 150px;
+}
+
+.inside18 {
+  background-color: $color4;
+  flex-basis: 250px;
+}
