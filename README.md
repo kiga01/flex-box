@@ -4,7 +4,7 @@
 
 npm install
 
-add first time gulp dependencies to typings
+add first time gulp dependencies to typings (if the typings folder is erased)
 
 typings i --save <gulp library name>
 
@@ -23,6 +23,8 @@ type "typings install" in mac you should use "sudo typings install"
 type "npm start" for starting the server
 
 when the server is loaded go to any browser and type "http://localhost:8080/index.html"
+
+## What is Flex-Box
 
 The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the
 items align, directions and order in the container even when they are with dynamic or even unknown size. The prime
